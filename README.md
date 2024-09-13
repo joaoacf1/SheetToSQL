@@ -1,6 +1,9 @@
 # SheetToSQL
 SheetToSQL is a Python-based ETL (Extract, Transform, Load) tool that extracts data from a Google Sheets spreadsheet, processes it using `pandas`, and loads it into a MySQL database. This project utilizes the Google Sheets API for data retrieval and provides a streamlined pipeline for data integration and management.
 
+![sheetstomysql](https://github.com/user-attachments/assets/820ae19e-9696-4556-9107-31acda5ea38b)
+
+
 ## Features
 
 - **Read Data:** Retrieve data from a specified Google Sheets spreadsheet using Google Sheets API.
