@@ -37,7 +37,7 @@ SheetToSQL is a Python-based ETL (Extract, Transform, Load) tool that extracts d
    - Service account
    - OAuth 2.0 Client ID
 
-Download the `client_secret.json` and `conta.json` files and keep them in the project root directory.
+Download the `client_secret.json` and `account.json` files and keep them in the project root directory.
 
 #### 2. Setting Up the Development Environment
 
@@ -58,7 +58,7 @@ The project consists of the following files:
 - main.py: Main script to run the program.
 - requirements.txt: List of all dependencies required for the project.
 - client_secret.json: Credentials for the OAuth 2.0 Client ID (not included in the repository for security reasons).
-- conta.json: Service account credentials for the Google Sheets API (not included in the repository for security reasons).
+- account.json: Service account credentials for the Google Sheets API (not included in the repository for security reasons).
 - token.json: Token file generated for Google Sheets API access (not included in the repository for security reasons).
 - .env: File to store environment variables such as database credentials (not included in the repository for security reasons).
 
@@ -68,7 +68,7 @@ The main.py script is organized into the following sections:
 1. Import Required Libraries: Libraries such as pandas, sqlalchemy, google-auth, and googleapiclient.
 2. Define Constants: Set up constants like Google Sheets ID, range, and MySQL connection details.
 3. Implement Functions:
-- get_credentials(): Obtains service account credentials from conta.json.
+- get_credentials(): Obtains service account credentials from account.json.
 - get_spreadsheet_data(service): Retrieves data from the specified Google Sheet.
 - process_data(values): Processes the obtained data using pandas.
 - save_to_database(df): Saves processed data to the MySQL database.
@@ -76,7 +76,7 @@ The main.py script is organized into the following sections:
 
 ## Functionalities
 1. Get Credentials:
-- The function get_credentials() reads the conta.json file and obtains credentials to access the Google Sheets API.
+- The function get_credentials() reads the account.json file and obtains credentials to access the Google Sheets API.
 2. Read Data from Google Sheets:
 - The function get_spreadsheet_data() connects to the Google Sheets API and retrieves data from a specified spreadsheet and range.
 3. Process Data Using Pandas:
@@ -91,7 +91,7 @@ The main.py script is organized into the following sections:
    cd SheetToSQL
 2. Set up the virtual environment and install dependencies.
 3. Configure environment variables in the .env file.
-4. Ensure the client_secret.json and conta.json files are correctly set up and placed in the project root.
+4. Ensure the client_secret.json and account.json files are correctly set up and placed in the project root.
 5. Run the script:
    ```bash
    python main.py
