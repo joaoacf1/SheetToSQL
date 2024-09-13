@@ -65,18 +65,6 @@ The project consists of the following files:
 ## Script Development
 The main.py script is organized into the following sections:
 
-Import Required Libraries: Libraries such as pandas, sqlalchemy, google-auth, and googleapiclient.
-Define Constants: Set up constants like Google Sheets ID, range, and MySQL connection details.
-Implement Functions:
-get_credentials(): Obtains service account credentials from conta.json.
-get_spreadsheet_data(service): Retrieves data from the specified Google Sheet.
-process_data(values): Processes the obtained data using pandas.
-save_to_database(df): Saves processed data to the MySQL database.
-Main Function (main()): Orchestrates the flow of the program, calling each function in the required order.
-
-## Script Development (main.py)
-The main.py script is organized into the following sections:
-
 1. Import Required Libraries: Libraries such as pandas, sqlalchemy, google-auth, and googleapiclient.
 2. Define Constants: Set up constants like Google Sheets ID, range, and MySQL connection details.
 3. Implement Functions:
