@@ -11,7 +11,7 @@ SheetToSQL is a Python-based ETL (Extract, Transform, Load) tool that extracts d
 
 1. [Getting Started](#getting-started)
 2. [Project Structure](#project-structure)
-3. [Script Development (main.py)](#development-environment-setup)
+3. [Script Development](#script-development)
 4. [Functionalities](#functionalities)
 5. [How to Use](#how-to-use)
 6. [Contributing](#contributing)
@@ -62,7 +62,7 @@ The project consists of the following files:
 - token.json: Token file generated for Google Sheets API access (not included in the repository for security reasons).
 - .env: File to store environment variables such as database credentials (not included in the repository for security reasons).
 
-Script Development (main.py)
+## Script Development
 The main.py script is organized into the following sections:
 
 Import Required Libraries: Libraries such as pandas, sqlalchemy, google-auth, and googleapiclient.
